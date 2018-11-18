@@ -1,0 +1,11 @@
+[user]
+	email = adam@signal11.com
+	name = Adam Weiss
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+    required = true
+[branch]
+    # rebase instead of merge to avoid extraneous merge commits on pull
+	autosetuprebase = always
