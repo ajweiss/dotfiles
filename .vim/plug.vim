@@ -13,11 +13,15 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'fholgado/minibufexpl.vim'
-Plug 'majutsushi/tagbar'
-Plug 'rust-lang/rust.vim'
-Plug 'cespare/vim-toml'
+" let's just go ahead and reference specific commits for repositories that i
+" don't own.  will likely break because they may get rebased away, but i like
+" that better than just trusting them outright.
+Plug 'fholgado/minibufexpl.vim',        { 'commit': 'ad72976ca3df4585d49aa296799f14f3b34cf953' }
+Plug 'majutsushi/tagbar',               { 'commit': '387bbadda98e1376ff3871aa461b1f0abd4ece70' }
+Plug 'rust-lang/rust.vim',              { 'commit': '7e1e2d259adb0c8c464cb6db6074c55f39fcfba7' }
+Plug 'cespare/vim-toml',                { 'commit': '2069e7413d8eaab567fa320723c4af24bb437f3a' }
 Plug 'ajweiss/vim-slime'
+Plug 'ConradIrwin/vim-bracketed-paste', { 'commit': 'c4c639f3cacd1b874ed6f5f196fac772e089c932' }
 
 filetype plugin indent on                   " required!
 call plug#end()
