@@ -11,7 +11,7 @@ if [ -f "/etc/arch-release" ]; then
     source /usr/share/git/completion/git-prompt.sh
 elif [ -f "/etc/bash_completion" ]; then
     . /etc/bash_completion
-else
+fi
 
 # aliases
 alias ls='ls --color=auto'
@@ -21,6 +21,11 @@ vimglob() { vim $(find . | grep $1); }
 
 # prompt
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+if [ -x "/usr/bin/vim" ]; then
+    export EDITOR=/usr/bin/vim
+    export VISUAL="$EDITOR"
+fi
 
 # env vars
 export PATH="$PATH:~/bin"
