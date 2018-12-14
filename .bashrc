@@ -13,6 +13,15 @@ elif [ -f "/etc/bash_completion" ]; then
     . /etc/bash_completion
 fi
 
+# gcloud
+if [ -f "/opt/google-cloud-sdk/path.bash.inc" ]; then
+    source /opt/google-cloud-sdk/path.bash.inc
+fi
+
+if [ -f "/opt/google-cloud-sdk/completion.bash.inc" ]; then
+    source /opt/google-cloud-sdk/completion.bash.inc
+fi
+
 # aliases
 alias ls='ls --color=auto'
 
