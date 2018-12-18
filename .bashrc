@@ -37,4 +37,4 @@ if [ -x "/usr/bin/vim" ]; then
 fi
 
 # env vars
-export PATH="$PATH:~/bin"
+export PATH="$PATH:$HOME/bin"
