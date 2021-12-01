@@ -24,6 +24,7 @@ Plug 'cespare/vim-toml',                { 'commit': '2069e7413d8eaab567fa320723c
 Plug 'ajweiss/vim-slime',               { 'branch': '201811_tmux_bracketed'                    }
 Plug 'ConradIrwin/vim-bracketed-paste', { 'commit': 'c4c639f3cacd1b874ed6f5f196fac772e089c932' }
 Plug 'nvie/vim-flake8',                 { 'commit': 'd50b3715ef386e4d998ff85dad6392110536478d' }
+Plug 'JuliaEditorSupport/julia-vim',    { 'commit': 'ee8465c7c21ea9a3ebcac30156105bdadd23751c' }
 
 filetype plugin indent on                   " required!
 call plug#end()
